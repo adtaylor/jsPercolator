@@ -1,6 +1,8 @@
+#=require plugins/<%= folder_path %>tbg-<%= file_name.underscore %>
+
 describe '<%= file_name.camelize %>:', ->
   beforeEach ->
-      loadFixtures "plugin/tbg-#{file_name.underscore}_fixture"
+      loadFixtures "plugins/tbg-<%= file_name.underscore %>_fixture"
 
   describe 'A Test', ->
     it 'should pass', ->

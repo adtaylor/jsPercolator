@@ -15,12 +15,12 @@ module JsPercolator
 
       # all public methods in here will be run in order
       def create_plugin
-        template "plugin.coffee", "app/assets/javascripts/#{folder_path}tbg-#{file_name.underscore}.js.coffee"
+        template "plugin.coffee", "app/assets/javascripts/plugins/#{folder_path}tbg-#{file_name.underscore}.js.coffee"
       end
 
       def create_js_test
-        template "js_spec.coffee", "spec/javascripts/plugin/tbg-#{file_name.underscore}_spec.js.coffee"
-        template "js_fixture.html.haml", "spec/javascripts/fixtures/plugin/tbg-#{file_name.underscore}_fixture.html.haml"
+        template "js_spec.coffee", "spec/javascripts/plugins/tbg-#{file_name.underscore}_spec.js.coffee"
+        template "js_fixture.html.haml", "spec/javascripts/fixtures/plugins/tbg-#{file_name.underscore}_fixture.html.haml"
       end
       private
 

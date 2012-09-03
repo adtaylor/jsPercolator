@@ -23,7 +23,7 @@ plugin = ($)->
 
   # <%= file_name.upcase %> CLASS DEFINITION
   # ========================= 
-  class <%= file_name %> 
+  class <%= file_name.camelize %> 
     constructor: ( element ) ->
       $el = $(element)
   
