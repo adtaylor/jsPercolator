@@ -2,6 +2,8 @@
 
 TODO: Write a gem description
 
+TODO: add http://editorconfig.org/
+
 ## Installation
 
 Add this line to your application's Gemfile:
