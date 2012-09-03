@@ -10,14 +10,9 @@ module JsPercolator
 
     # all public methods in here will be run in order
     def create_plugin
-      # template "initializer.rb", "config/initializers/my_gem_initializer.rb"
-      puts "hello, world!"
+      template "plugin.coffee", "app/assets/javascripts/plugin.js.coffee"
     end
 
-    def create_tests
-
-      puts "making tests"
-    end
 
   end
 end
