@@ -38,8 +38,8 @@ plugin = ($)->
   $.fn.<%= file_name.camelize(:lower) %> = ( option ) ->
     this.each ->
       $this = $(@)
-      data = $this.data '<%= file_name.camelize(:lower) %>'
-      if !data then $this.data '<%= file_name.camelize(:lower) %>', (data = new <%= file_name.camelize %> @)
+      data = $this.data '<%= file_name.camelize(:lower) %>Plugin'
+      if !data then $this.data '<%= file_name.camelize(:lower) %>Plugin', (data = new <%= file_name.camelize %> @)
       if typeof option is 'string' then data[option].call $this
   
   $.fn.<%= file_name.camelize(:lower) %>.Constructor = <%= file_name.camelize %>
