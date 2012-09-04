@@ -49,7 +49,7 @@ plugin = ($)->
   # ===================================
   
   $ ->
-    $('body').on 'click.<%= file_name.camelize(:lower) %>.data-api', '[data-<%= file_name.camelize(:lower) %>Action^=Action]', ( e ) ->
+    $('body').on 'click.<%= file_name.camelize(:lower) %>.data-api', '[data-<%= file_name.camelize(:lower) %>]', ( e ) ->
       $(e.target).<%= file_name.camelize(:lower) %>()
 
 do ( plugin ) ->
